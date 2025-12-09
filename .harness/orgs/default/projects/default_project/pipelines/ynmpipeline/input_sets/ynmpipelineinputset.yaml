@@ -1,0 +1,14 @@
+inputSet:
+  name: ynm-pipeline-input-set
+  identifier: ynmpipelineinputset
+  orgIdentifier: default
+  projectIdentifier: default_project
+  pipeline:
+    identifier: ynmpipeline
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
